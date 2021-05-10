@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense, useState, lazy } from 'react';
+import { Route } from 'react-router';
+import MakerBadge from './Components/MakerBadge';
 
-function App() {
+import Loading from './Views/Loading';
+const Home = lazy(() => import('./Views/Home'));
+const About = lazy(() => import('./Views/About'));
+const Result = lazy(() => import('./Views/Result'));
+
+export default function App() {
+  const [choice, setChoice] = useState({ type: '', name: '', url: '', image: '' });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<Loading />}>
+      <Route exact path="/" render={(props) => <Home {...props} choice={choice} setChoice={setChoice} />} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/result" render={(props) => <Result {...props} choice={choice} />} />
+      <MakerBadge />
+    </Suspense>
   );
 }
-
-export default App;
