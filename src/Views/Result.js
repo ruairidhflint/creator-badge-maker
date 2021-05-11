@@ -24,7 +24,7 @@ const Result = ({ choice, ...props }) => {
     }, 5000);
   };
   return (
-    <div className="max-w-6xl min-w-7xl mt-4 mx-auto bg-white flex flex-col items-center justify-center min-h-screen px-4 sm:py-8 sm:px-6 lg:px-8">
+    <div className="max-w-6xl min-w-7xl my-6 mx-auto bg-white flex flex-col items-center justify-center min-h-screen px-4 sm:py-8 sm:px-6 lg:px-8">
       <div className="text-center">
         <p className="max-w-4xl mx-auto mt-1 text-4xl mb-8 font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-5xl">
           Here's Your <span className="text-ruairidh">Maker</span> Badge!

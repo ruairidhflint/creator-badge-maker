@@ -7,7 +7,7 @@ const MakerBadge = () => {
           style={{ fill: '#3BA9EE' }}
         />
       </svg>
-      <span class="text" style={{ marginLeft: '7px' }}>
+      <span className="text" style={{ marginLeft: '7px' }}>
         MrRoryFlint
       </span>
     </a>

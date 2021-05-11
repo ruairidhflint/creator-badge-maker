@@ -50,7 +50,7 @@ const Input = ({ choice, setChoice, submit, ...props }) => {
     return (
       <div>
         <p className="max-w-xl mt-4 mb-6 mx-auto text-xl text-gray-500 text-center">
-          Enter your name and custom URL or{' '}
+          Enter your name, link url and image url or{' '}
           <span
             className="underline hover:text-gray-200 transition duration-250 ease-in-out cursor-pointer"
             onClick={() => setChoice({ type: '', name: '', url: '' })}

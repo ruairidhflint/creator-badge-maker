@@ -18,7 +18,6 @@ export const htmlCreate = (type, name, url, image) => {
   return `<a
       target="_blank"
       rel="noreferrer noopener"
-      class="levelsio-by"
       href="${url}"
       style="
       background-attachment: scroll;
@@ -78,7 +77,7 @@ export const reactCreate = (type, name, url, image) => {
     return (
       <a target="_blank" rel="noreferrer noopener" href="${url}" style={linkStyle}>
         ${icon}
-        <span class="text" style={{ marginLeft: '7px' }}>
+        <span className="text" style={{ marginLeft: '7px' }}>
           ${name}
         </span>
       </a>
