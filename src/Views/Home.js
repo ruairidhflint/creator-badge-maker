@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import Input from './Input';
 
+import Rory from '../Assets/rory.jpeg';
+
 const Home = ({ choice, setChoice, ...props }) => {
   const submit = (e) => {
     e.preventDefault();
@@ -72,7 +74,7 @@ const Home = ({ choice, setChoice, ...props }) => {
             </svg>
             <img
               onClick={() => setChoice({ ...choice, type: 'Custom' })}
-              src="https://media-exp1.licdn.com/dms/image/C4E03AQGyNb_jjsTrdw/profile-displayphoto-shrink_100_100/0/1562846165999?e=1625097600&v=beta&t=-fCGFxh0zcu1zwgY1dIyxwfkBNpaxsbi70FxxEISXv4"
+              src={Rory}
               alt=""
               width="60px"
               height="60px"
