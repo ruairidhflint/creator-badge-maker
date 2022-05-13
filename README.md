@@ -1,5 +1,8 @@
 # Badge Maker
 
+Deployed - https://badge.rory.codes/
+
+
 Inspired by [Jakob Greenfeold](https://jakobgreenfeld.com/badge) and [Pieter Levels](https://levels.io/) - a simple app
 to generate the necessary code to create your own maker badge.
 
